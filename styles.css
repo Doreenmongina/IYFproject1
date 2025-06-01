@@ -1,0 +1,1164 @@
+
+:root {
+    --primary: #1a2b47;
+    --secondary: #ff4c29;
+    --light: #f5f5f5;
+    --dark: black;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    background: transparent;
+    background-color:rgb(230, 226, 226);
+    color: var(--dark);
+    line-height: 1.6;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+ .header-container {
+      margin: 0 auto;
+      max-width: 100vw;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Remove header background */
+    header {
+      background: transparent;
+      padding: 15px 0;
+    }
+
+    /* Nav */
+    nav {
+      background-color: rgb(230, 226, 226);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 50px; 
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Navigation links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    
+    .nav-links.active{
+        display: flex;
+    }
+    /* Group links before and after the logo */
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .nav-left li,
+    .nav-right li {
+        margin: 0 20px;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .nav-left li a:hover,
+    .nav-right li a:hover {
+        background-color: var(--primary);
+        color: var(--light);
+        transition: all 0.3s ease;
+        border-radius: 20px;
+        padding: 10px 30px;
+
+    }
+
+    .nav-left li a,
+    .nav-right li a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    /* Logo style */
+    .logo {
+      font-size: 2.7rem;
+      font-weight: 900;
+      margin: 0 40px;
+      color: var(--primary);
+      text-decoration: none;
+      font-family: sans-serif;
+      
+    }
+
+    /* Logo hover effect */
+    .logo:hover {
+      color: var(--dark);
+      transition: all 0.3s ease; 
+      transform: translateY(4rem);
+    }
+
+    /* Logo with a span for color change */
+    .logo span {
+      color: var(--secondary);
+    }
+
+    .logo span:hover {
+      color: var(--secondary);
+      transition: all 0.3s ease;
+    }
+
+    /* Join Now button */
+    .btn {
+      background-color: var(--secondary);
+      color: var(--light);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: var(--primary);
+      color: var(--light);
+      transition: all 0.3s ease;
+      padding: 10px 30px;
+    }
+
+    /* Hamburger menu styles */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .hamburger div {
+    display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--light);
+      transition: all 0.3s ease;
+    }
+
+     /* Hamburger menu animation for active state */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    } 
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/gym-6973633_1280.png');
+    
+    transition: background-image 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    height: 86.4vh;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--light);
+    padding: 0 20px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.hero:hover {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),  url('images/gym_ft.png');
+  color: var(--light);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    color: var(--dark);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.hero-content h2 span {
+    color: var(--secondary);
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about {
+    padding: 30px 0;
+    background-color: var(--light);
+    margin: 30px;
+    border-radius: 50px;
+}
+
+.about-container{
+    padding: 0 15px;
+    display: flex;
+
+}
+
+.about-content {
+    box-sizing: border-box;
+    flex: 1;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 1.5rem;
+}
+
+.about-image {
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 50px;
+    overflow: hidden;   
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-right: 5px;
+}
+
+.about-image img:hover{
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-17px);
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 30px;
+    background-color: var(--light);
+    margin: 35px;
+    border-radius: 50px;
+
+}
+
+#section-title{
+    text-align: center;
+
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background-color: var(--light);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 30px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+/* Stats Section */
+
+.stats {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/gym_interiorr.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 50px 0;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 25px;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+
+.section-title-stats {
+    padding-left: 20px;
+    color: var(--light);
+    font-size: 2rem;
+}
+
+.stat-container p {
+    font-size: 1rem;
+    color: var(--light);
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 25px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.testimonial-card {
+    background-color: var(--light);
+    border-radius: 50px;
+    padding: 30px;
+    position: relative;
+}
+
+.testimonial-card:before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 60px;
+    color: rgba(172, 4, 4, 0.2);
+}
+
+.testimonial-card:hover{
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.testimonial-text {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nutrition section */
+.nutrition{
+    display: flex;
+    background-color: white;
+    border-radius: 40px;
+    margin: 40px 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.nutrition-container{
+    flex: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('images/gym_training.avif');
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.nutrition-grid{
+    flex:1;
+    gap:20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/gym_training1.avif');
+    border-radius: 30px;
+    padding: 15px;
+    color: black;
+}
+/* Classes Section */
+.classes {
+    padding: 80px 25px;
+    background-color: var(--light);
+    border-radius: 50px;
+}
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.class-card:hover{
+    transition: all 0.3s ease;
+    transform:translateY(2rem)
+}
+
+.class-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.class-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.class-details {
+    padding: 20px;
+}
+
+.class-details h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.class-schedule {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: #777;
+}
+
+/*our partners section */
+
+.container-partners {
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px 0 40px 0;
+    border-radius: 100px;
+}
+
+.section-title-partners {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.partners-logos:hover{
+    transform: translateX(1.5rem);
+    font-size: 2.5rem;
+}
+
+/* FitTech Logo */
+.partner-logo1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.partner-logo1::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--secondary);
+    margin-right: 6px;
+    transform: rotate(45deg);
+    position: relative;
+    top: -2px;
+}
+
+/* NutriMax Logo */
+.partner-logo2 {
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.partner-logo2::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 2px;
+}
+
+/* ActiveLife Logo*/
+.partner-logo3 {
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.partner-logo3::before {
+    content: "›";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-right: 5px;
+    line-height: 0.8;
+    color: var(--secondary);
+    transform: rotate(50deg);
+}
+
+/* HealthHub Logo*/
+.partner-logo4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.partner-logo4::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    margin-right: 6px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+/* VitalFit Logo - */
+.partner-logo5 {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.partner-logo5::first-letter {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+
+/* Community Section */
+
+.community-faq-container {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.community {
+    padding: 200px 0;
+    background-color: var(--primary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/gym-6805235_1280.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 78vh;
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.community:hover{
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transform: scale(1.03);
+
+}
+
+.community h2 {
+    color: white;
+}
+
+.community h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.community p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 25px;
+    background-color: white;
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 100px;
+}
+
+.faq:hover{
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transform: scale(1.03);
+
+}
+
+.accordion {
+    margin-top: 50px;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: var(--light);
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:after {
+    content: '+';
+    font-size: 20px;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 20px 0;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+.accordion-header.active:after {
+    content: '-';
+    color: var(--primary);
+}
+
+
+/* Contact Section */
+.contact{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 25px 0;
+    border-radius: 100px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.contact-header{
+    margin: 40px 0;
+    text-align: center;
+
+}
+.contact-header p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-style: bold;
+}
+.contact-container {
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 100px;
+    background-color: var(--light);
+    padding: 70px;
+    margin: 0 40px;
+}
+
+.section-title-contact{
+     font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    position: relative;
+    padding-left: 20px;   
+}
+
+.contact-card{
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+}
+ 
+.contact-card:hover{transform: scale(1.05);
+color: var(--secondary)
+}
+
+.contact-card a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+    
+.contact-form-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    border-radius: 100px;
+    background-color: var(--primary);
+    padding: 40px;
+    margin: 0 30px;
+    color: var(--light);
+    justify-content: center;
+    align-content: center;
+}
+
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        width: 100%; 
+        border: none;
+        border-bottom: 2px solid var(--light); 
+        outline: none; 
+        font-size: 16px;
+        background: transparent;
+        color: var(--light);
+        border-radius: 10px;
+        padding-left: 20px;
+    }
+
+    textarea{
+    resize: none;
+    }
+
+.footer-container{
+    padding: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: var(--primary);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    transition: 0.3s;
+}
+
+img:hover {
+    opacity: 0.4;
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    body {
+        margin-left: 4%;
+        margin-right: 4%;
+
+    }
+
+    .nav-left li,
+    .nav-right li {
+        margin: 0 7px;
+        font-size: 1rem;
+        padding: 0 2px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+    }
+
+    .hero-content {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content h2 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    
+    /* Make the nutrition section stack vertically */
+    .nutrition {
+        flex-direction: column;
+    }
+    
+    .nutrition-container, .nutrition-grid {
+        width: 100%;
+    }
+    
+    /* Make the community-faq container stack vertically */
+    .community-faq-container {
+        flex-direction: column;
+    }
+    
+    .community, .faq {
+        width: 100%;
+    }
+    
+    .community {
+        height: auto;
+        padding: 80px 0;
+    }
+    
+    /* Stack the contact section vertically */
+    .contact {
+        flex-direction: column;
+    }
+    
+    .contact-container, .contact-form-newsletter {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
+    .hamburger div {
+        background-color: var(--primary);
+    }
+
+    /* Navigation for mobile */
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--light);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding-top: 20px;
+        gap: 0.2rem;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-left, .nav-right {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .nav-left li, .nav-right li {
+        margin: 5px 0;
+        font-size: 0.9rem;
+        text-align: center;
+        display: block;
+        padding: 15px 30px;
+    }
+
+
+    
+    .logo {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+
+    }
+    
+    /* Hero section adjustments for mobile */
+    .hero {
+        height: 96vh;
+        border-radius: 50px;
+        background: cover;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        background-repeat: no-repeat;
+
+    }
+    
+    .hero-content {
+    justify-content: center;
+    padding: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* About */
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        height: 70hv;
+        width: 100%;    
+    }
+
+    .about-content{
+        box-sizing: border-box;
+        flex: 1;
+    }
+
+    .about-image{
+        flex: 1;
+
+    }
+    
+    /* Services grid adjustments */
+    .services-grid, .stats-grid, .testimonials-grid, .classes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card, .testimonial-card, .class-card {
+        margin: 0 20px;
+    }
+    
+    /* Stats section */
+    .stats {
+        border-radius: 30px;
+        padding: 40px 20px;
+        height: 80vh;
+    }
+    
+    .section-title-stats {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .stat-item h2{
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+        margin: 0;
+    }
+    
+    .stat-container p {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    /* Partners section */
+    .partners-logos {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+
+    
+    /* Contact section */
+
+    
+    .contact {
+        border-radius: 50px;
+    }
+    
+    .contact-container, .contact-form-newsletter {
+        border-radius: 50px;
+        padding: 20px;
+    }
+    
+    .contact-form, .newsletter {
+        width: 100%;
+    }
+    
+    /* Form inputs */
+    input, textarea{
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    button{
+        width: 30%;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-title-contact, .section-title-stats, .section-title-partners {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .about, .services, .testimonials, .classes {
+        padding: 40px 0;
+    }
+    
+    /* Contact form spacing */
+    .contact-form-newsletter {
+        gap: 10px;
+    }
+    
+    /* Footer adjustments */
+    footer {
+        padding: 15px 0;
+    }
+}
+
