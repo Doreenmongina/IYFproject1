@@ -1062,7 +1062,7 @@ img:hover {
     
     /* Hero section adjustments for mobile */
     .hero {
-        height: 100vh;
+        height: auto;
         border-radius: 50px;
         background: cover;
         width: 100%;
