@@ -1062,8 +1062,9 @@ img:hover {
     
     /* Hero section adjustments for mobile */
     .hero {
+        padding:0;
         height: auto;
-        border-radius: 50px;
+        border-radius: 0;
         background: cover;
         width: 100%;
         position: relative;
