@@ -1063,7 +1063,7 @@ img:hover {
     /* Hero section adjustments for mobile */
     .hero {
         padding:0;
-        height: auto;
+        height: 90vh;
         border-radius: 0;
         background: cover;
         width: 100%;
