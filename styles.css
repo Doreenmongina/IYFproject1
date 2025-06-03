@@ -1024,7 +1024,6 @@ img:hover {
         top: 0;
         left: -100%;
         width: 70%;
-        height: 60vh;
         justify-content: center;
         align-items: center;
         background-color: var(--light);
