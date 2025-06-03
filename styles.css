@@ -1023,7 +1023,8 @@ img:hover {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 70%;
+        width: 100vw;
+        height: 90vh;
         justify-content: center;
         align-items: center;
         background-color: var(--light);
@@ -1032,6 +1033,7 @@ img:hover {
         gap: 0.2rem;
         transition: left 0.3s ease;
         z-index: 999;
+        margin-top: 6%;
     }
     
     .nav-links.active {
