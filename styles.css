@@ -370,6 +370,7 @@ body {
 .testimonial-container{
     margin: 0;
     padding: 0 15px;
+    width:100vw;
 }
 .testimonials {
     padding: 60px 40px;
