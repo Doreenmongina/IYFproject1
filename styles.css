@@ -279,7 +279,6 @@ body {
 .services {
     padding: 20px 30px;
     margin: 10px 0;
-    height:auto;
 
 }
 
@@ -1106,6 +1105,7 @@ img:hover {
         gap: 30px;
         box-sizing: border-box;
         height: 100vh;
+        margin-bottom: 20px;
     }
 
     .service-card,
