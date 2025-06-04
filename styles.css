@@ -20,8 +20,8 @@ body {
     background-color:rgb(230, 226, 226);
     color: var(--dark);
     line-height: 1.6;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
  .header-container {
@@ -45,14 +45,13 @@ body {
       align-items: center;
       justify-content: center;
       position: relative;
-      border-radius: 50px; 
     }
 
     .nav-container {
       display: flex;
       align-items: center;
-      gap: 10px;
-      width: 100%;
+      gap: 20px;
+      width: 100vw;
       justify-content: center;
     }
 
@@ -99,6 +98,7 @@ body {
       color: var(--primary);
       font-weight: 600;
       transition: color 0.3s ease;
+      font-size: 1.1rem;
     }
 
     /* Logo style */
@@ -117,6 +117,7 @@ body {
       color: var(--dark);
       transition: all 0.3s ease; 
       transform: translateY(4rem);
+      padding: 10px 30px;
     }
 
     /* Logo with a span for color change */
@@ -204,14 +205,14 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hero-content h2 {
     color: var(--dark);
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 65px;
+    margin-bottom: 10px;
 }
 .hero-content h2 span {
     color: var(--secondary);
@@ -224,14 +225,14 @@ body {
 /* About Section */
 .about {
     padding: 30px 0;
-    background-color: var(--light);
-    margin: 40px 0;
+    margin: 5px 0;
     border-radius: 50px;
 }
 
 .about-container{
     padding: 0 15px;
     display: flex;
+    gap: 70px;
 
 }
 
@@ -274,22 +275,10 @@ body {
     padding-bottom: 15px;
 }
 
-.section-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 4px;
-    background-color: var(--secondary);
-}
-
 /* Services Section */
 .services {
-    padding: 60px 30px;
-    background-color: var(--light);
-    margin: 40px 0;
-    border-radius: 50px;
+    padding: 20px 30px;
+    margin: 10px 0;
 
 }
 
@@ -297,18 +286,23 @@ body {
     text-align: center;
 
 }
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+.section-title p{
+    font-size: 1.1rem;
 }
 
-.service-card {
+.services-grid {
+    display: flex;
+    box-sizing: border-box;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-card,
+.service-card2
+{
     background-color: var(--light);
-    border-radius: 30px;
-    padding: 30px;
+    border-radius: 50px;
+    padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -487,6 +481,7 @@ body {
     object-fit: cover;
 }
 
+
 /* Nutrition section */
 .nutrition{
     display: flex;
@@ -593,8 +588,8 @@ body {
 }
 
 .partners-logos:hover{
-    transform: translateX(1.5rem);
-    font-size: 2.5rem;
+    transform: translateX(1.2rem);
+    font-size: 2rem;
 }
 
 /* FitTech Logo */
@@ -915,8 +910,8 @@ img:hover {
 /* Tablet Devices */
 @media (max-width: 1024px) {
     body {
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
 
     }
 
@@ -924,11 +919,11 @@ img:hover {
     .nav-right li {
         margin: 0 7px;
         font-size: 1rem;
-        padding: 0 2px;
+        padding: 0 8px;
     }
 
     .logo {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin: 0 10px;
         padding: 0 10px;
     }
@@ -996,15 +991,14 @@ img:hover {
 /* Mobile Devices */
 @media (max-width: 768px) {
     body {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
     /* Show hamburger menu */
     .hamburger {
         display: flex;
         position: absolute;
-        top: 20px;
         right: 20px;
         z-index: 1000;
     }
@@ -1047,11 +1041,10 @@ img:hover {
     }
     
     .nav-left li, .nav-right li {
-        margin: 5px 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
         display: block;
-        padding: 15px 30px;
+        padding: 30px 30px;
     }
     
     .logo {
@@ -1062,13 +1055,14 @@ img:hover {
     
     /* Hero section adjustments for mobile */
     .hero {
-        height: 90vh;
-        border-radius: 30px;
+        height: 95.5vh;
+        border-radius: 40px;
         background: cover;
         width: 100%;
-        position: relative;
+        background-position: relative;
         justify-content: center;
         background-repeat: no-repeat;
+
 
     }
     
@@ -1078,19 +1072,20 @@ img:hover {
     }
 
     .hero-content h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
     
-    .hero-content p {
-        font-size: 16px;
+    .hero-content h2 {
+        font-size: 50px;
     }
 
     /* About */
     .about-container{
         display: flex;
         flex-direction: column;
-        height: 70hv;
-        width: 100%;    
+        height: auto;
+        width: 100%; 
+        gap: 20px;   
     }
 
     .about-content{
@@ -1105,7 +1100,21 @@ img:hover {
     }
     
     /* Services grid adjustments */
-    .services-grid, .stats-grid, .testimonials-grid, .classes-grid {
+
+    .services-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+
+    .service-card,
+    .service-card2{
+        flex:1;
+    }
+    
+ .stats-grid, .testimonials-grid, .classes-grid {
         grid-template-columns: 1fr;
     }
     
@@ -1164,6 +1173,7 @@ img:hover {
     width: 100%;
     justify-content: center;
 }
+ 
     
     /* Partners section */
     .partners-logos {
@@ -1206,13 +1216,13 @@ img:hover {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     .hero {
-        width:100%;
-        height: 90vh;
+        height: 95.5vh;
         border-radius: 30px;
         background: cover;
+        width: 100%;
         position: relative;
         justify-content: center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
     
     .hero-content h1 {
