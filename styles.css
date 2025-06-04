@@ -427,7 +427,8 @@ body {
     position: relative;
     transition: all 0.3s ease;
     display: none;
-
+    width: 500;
+    height: 210px;
 }
 
 .testimonial-card.active {
