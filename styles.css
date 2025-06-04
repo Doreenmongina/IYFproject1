@@ -1098,6 +1098,9 @@ img:hover {
     }
     
     /* Services grid adjustments */
+    . Services{
+      margin-bottom: 30px;
+}
 
     .services-grid{
         display: flex;
@@ -1244,8 +1247,12 @@ img:hover {
     .about, .services, .testimonials, .classes {
         padding: 40px 0;
     }
+    /*services*/
+    . Services{
+       margin-bottom: 30px;
+}
     
-    /* Contact form spacing */
+  /* Contact form spacing */
     .contact-form-newsletter {
         gap: 10px;
     }
